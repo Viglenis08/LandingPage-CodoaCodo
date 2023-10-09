@@ -37,8 +37,9 @@ body {
   
   .footer-color{
       margin: 0 !important;
-      background-color: #256274;
+      background: linear-gradient(to right, rgb(16, 20, 31), rgb(3, 83, 105));
       padding-top: 10px;
+      
   
     }
    
