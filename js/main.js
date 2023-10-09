@@ -4,7 +4,7 @@ document.querySelectorAll('.btn').forEach(buttonElement => {
     button.toggle()
   })
 
-  function calculateTotalPrice() {
+  function calculateTotalPrecio() {
     const regularTicketPrice = 2000;
     const studentTicketPrice = regularTicketPrice * 0.2; 
     const trainerTicketPrice = regularTicketPrice * 0.5;
@@ -12,20 +12,20 @@ document.querySelectorAll('.btn').forEach(buttonElement => {
     
     let regularTicketQuantity = parseInt(document.getElementById('regular-ticket').value);
     let studentTicketQuantity = parseInt(document.getElementById('student-ticket').value);
-    let trainerTicketQuantity = parseInt(document.getElementById('trainer-ticket').value);
-    let juniorTicketQuantity = parseInt(document.getElementById('junior-ticket').value);
+    let trainerTicketQuantity = parseInt(document.getElementById('ticketTrainee').value);
+    let juniorTicketQuantity = parseInt(document.getElementById('ticketJr').value);
     
-    let totalPrice = (regularTicketPrice * regularTicketQuantity) + (studentTicketPrice * studentTicketQuantity) + (trainerTicketPrice * trainerTicketQuantity) + (juniorTicketPrice * juniorTicketQuantity);
+    let totalPrecio = (regularTicketPrice * regularTicketQuantity) + (studentTicketPrice * studentTicketQuantity) + (trainerTicketPrice * trainerTicketQuantity) + (juniorTicketPrice * juniorTicketQuantity);
     
-    document.getElementById('total-price').textContent =  totalPrice;
+    document.getElementById('total').textContent =  totalPrecio;
   }
 
   function borrarFormulario() {
-    document.getElementById("formluario").reset();
-    document.getElementById("aPagar").style.display = "none";
+    document.getElementById("formulario").reset();
+    document.getElementById("pago").style.display = "none";
   }
 
-  document.getElementById("miBoton").addEventListener("click", function() {
-    document.getElementById("aPagar").style.display = "block";
+  document.getElementById("botondepago").addEventListener("click", function() {
+    document.getElementById("pago").style.display = "block";
   });
   

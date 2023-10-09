@@ -35,14 +35,14 @@ body {
   }
   
   
-    .fondo{
+  .footer-color{
       margin: 0 !important;
-      background-color: #2a4d57;
+      background-color: #256274;
       padding-top: 10px;
   
     }
    
-    #aPagar{
+  #pago{
       display: none;
     }
   
